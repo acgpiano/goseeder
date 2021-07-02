@@ -19,7 +19,7 @@ type Torrent struct {
 }
 
 func NewClient(source string, limit int, passkey string,Rule config.NodeRule) Client {
-	var baseURL = "https://" + source + "/torrentrss.php?rows=" + strconv.Itoa(limit) + "&linktype=dl&passkey=" + passkey
+	var baseURL = "https://" + source + "/torrentrss.php?rows=" + strconv.Itoa(limit) + "&cat410=1&cat429=1&cat424=1&cat430=1&cat426=1&cat437=1&cat431=1&cat432=1&cat436=1&cat425=1&cat433=1&cat411=1&cat412=1&cat413=1&cat440=1&linktype=dl&passkey=" + passkey
 	return Client{
 		baseURL: baseURL,
 		Rule:Rule,
